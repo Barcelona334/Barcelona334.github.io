@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты — ФК Барселона</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; margin: 0; color: #333; }
+        header, footer { background-color: #004d98; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #a50044; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { padding: 30px; max-width: 800px; margin: auto; }
+        .logo { width: 90px; }
+        
+        .contact-grid { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 20px; }
+        .info-block { flex: 1; min-width: 280px; }
+        .form-block { flex: 1; min-width: 280px; background: #f4f4f4; padding: 20px; border-radius: 8px; }
+        
+        input, textarea { width: 100%; padding: 8px; margin: 10px 0; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background: #004d98; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #a50044; }
+
+        .preview-box { border: 1px solid #ccc; padding: 10px; text-align: center; margin-top: 20px; }
+        footer { font-size: 10pt; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Логотип ФК Барселона" width="200">
+    </a>
+    <h1>Связаться с нами</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="history.html">История</a>
+    <a href="squad.html">Состав</a>
+    <a href="stadium.html">Стадион</a>
+    <a href="trophies.html">Трофеи</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="legends.html">Легенды</a>
+    <a href="lamasia.html">Ла Масия</a>
+    <a href="schedule.html">Расписание</a>
+    <a href="shop.html">Магазин</a>
+</nav>
+
+<div class="container">
+    <h2>Контактная информация</h2>
+    
+    <div class="contact-grid">
+        <div class="info-block">
+            <h3>Офис клуба</h3>
+            <p><strong>Адрес:</strong> Aristides Maillol s/n, 08028 Barcelona, Spain</p>
+            <p><strong>Телефон:</strong> +34 902 1899 00</p>
+            <p><strong>Email:</strong> oab@fcbarcelona.cat</p>
+            
+            <h3>Часы работы музея</h3>
+            <p>Понедельник — Суббота: 10:00 – 20:00<br>
+            Воскресенье: 10:00 – 14:30</p>
+
+            <div class="preview-box">
+                <p><small>Музей внутри:</small></p>
+                <a href="https://www.iguana.ws/ispania/iguana-fk-barsa-museum-6.jpg" target="_blank">
+                    <img src="https://www.iguana.ws/ispania/iguana-fk-barsa-museum-6.jpg" alt="Музей Барселоны внутри" width="200">
+                </a>
+            </div>
+        </div>
+
+        <div class="form-block">
+            <h3>Напишите нам</h3>
+            <form>
+                <label>Ваше имя:</label>
+                <input type="text" placeholder="Введите имя">
+                
+                <label>Ваш Email:</label>
+                <input type="email" placeholder="example@mail.com">
+                
+                <label>Сообщение:</label>
+                <textarea rows="4" placeholder="Ваш вопрос..."></textarea>
+                
+                <button type="button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <p style="margin-top: 30px;"><a href="index.html">← На главную страницу</a></p>
+</div>
+
+<footer>
+    <p>Контактная информация: Офис клуба, Aristides Maillol s/n, 08028 Barcelona</p>
+    <p>&copy; 2026 ФК Барселона. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

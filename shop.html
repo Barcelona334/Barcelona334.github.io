@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин атрибутики — ФК Барселона</title>
+    <meta name="description" content="Официальный магазин атрибутики ФК Барселона: футболки, шарфы, мячи, кружки и другие сувениры с символикой клуба.">
+    <meta name="keywords" content="магазин, атрибутика, футболка, шарф, сувениры, Барселона, купить">
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; margin: 0; color: #333; }
+        header, footer { background-color: #004d98; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #a50044; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { padding: 30px; max-width: 1000px; margin: auto; }
+        
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: calc(33.333% - 17px);
+            min-width: 250px;
+            text-align: center;
+            padding: 15px;
+            transition: box-shadow 0.3s;
+        }
+        .product:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            margin-bottom: 15px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        .product h3 {
+            color: #a50044;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #004d98;
+            margin: 10px 0;
+        }
+        .buy-btn {
+            background-color: #a50044;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 10pt;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #004d98;
+        }
+        
+        footer { font-size: 10pt; margin-top: 40px; }
+        
+        @media (max-width: 768px) {
+            .product { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html">
+        <img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Логотип ФК Барселона" width="200">
+    </a>
+    <h1>Магазин атрибутики</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="history.html">История</a>
+    <a href="squad.html">Состав</a>
+    <a href="stadium.html">Стадион</a>
+    <a href="trophies.html">Трофеи</a>
+    <a href="contacts.html">Контакты</a>
+    <a href="legends.html">Легенды</a>
+    <a href="lamasia.html">Ла Масия</a>
+    <a href="schedule.html">Расписание</a>
+    <a href="shop.html">Магазин</a>
+</nav>
+
+<div class="container">
+    <h2>Фирменная продукция ФК Барселона</h2>
+    <p>В нашем магазине вы можете приобрести официальную атрибутику любимого клуба. Все товары сертифицированы и поставляются напрямую от производителя.</p>
+
+    <div class="products">
+        <div class="product">
+            <div class="product-image">
+                <a href="https://allsoccer.shop/image/catalog/Ispania/Barcelona/Home/barca25-26-home.jpg" target="_blank">
+                    <img src="https://allsoccer.shop/image/catalog/Ispania/Barcelona/Home/barca25-26-home.jpg" alt="Домашняя футболка Барселона сезона 2025/26">
+                </a>
+            </div>
+            <h3>Домашняя футболка</h3>
+            <p>Сезон 2025/26, оригинал от Nike. Классические сине-гранатовые полосы.</p>
+            <div class="price">€89.99</div>
+            <button class="buy-btn" onclick="alert('Товар добавлен в корзину. Спасибо за покупку!')">В корзину</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <a href="https://basket-04.wbbasket.ru/vol525/part52559/52559008/images/big/1.webp" target="_blank">
+                    <img src="https://basket-04.wbbasket.ru/vol525/part52559/52559008/images/big/1.webp" alt="Фирменный шарф Барселона">
+                </a>
+            </div>
+            <h3>Фанатский шарф</h3>
+            <p>Двусторонний шарф с надписью «Més que un club» и гербом клуба.</p>
+            <div class="price">€19.99</div>
+            <button class="buy-btn" onclick="alert('Товар добавлен в корзину. Спасибо за покупку!')">В корзину</button>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKX1ZF4a5cz6s4hVP_9VvoqT0S__sKow5OXw&s" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKX1ZF4a5cz6s4hVP_9VvoqT0S__sKow5OXw&s" alt="Футбольный мяч Барселона">
+                </a>
+            </div>
+            <h3>Футбольный мяч</h3>
+            <p>Официальный мяч с логотипом клуба. Размер 5, идеален для игры и коллекции.</p>
+            <div class="price">€34.99</div>
+            <button class="buy-btn" onclick="alert('Товар добавлен в корзину. Спасибо за покупку!')">В корзину</button>
+        </div>
+    </div>
+
+    <p><a href="index.html">← На главную страницу</a></p>
+</div>
+
+<footer>
+    <p>Контактная информация: Магазин атрибутики, Camp Nou, 08028 Barcelona</p>
+    <p>&copy; 2026 Неофициальный сайт ФК Барселона</p>
+</footer>
+
+</body>
+</html>
