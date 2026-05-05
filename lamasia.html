@@ -11,7 +11,6 @@
         nav { background-color: #a50044; padding: 10px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         .container { padding: 30px; max-width: 900px; margin: auto; }
-        .logo { width: 90px; }
         
         .info-panel {
             background: #f4f4f4;
@@ -26,29 +25,74 @@
             background: white;
             margin: 20px 0;
         }
+        
+        /* НОВЫЙ стиль для списка выпускников — без фона, без рамок, без намека на интерактив */
         .graduate-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
+            gap: 12px 20px;
+            margin: 20px 0 25px 0;
+            list-style: none;
+            padding-left: 0;
         }
         .graduate {
-            background: #004d98;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 10pt;
+            /* Убираем любой фон, границы, тени — не похоже на кнопку или ссылку */
+            background: transparent;
+            color: #1a3e6f;
+            padding: 0;
+            margin: 0;
+            font-size: 11pt;
+            font-weight: normal;
+            /* стандартный курсор (обычная стрелка), не pointer */
+            cursor: default;
+            /* гарантия, что нет подчёркивания */
+            text-decoration: none;
+            border: none;
+            /* можно добавить лёгкий разделитель, чтобы визуально отделить имена, но не как ссылку */
+            border-bottom: 1px dotted #ccc;
+            display: inline-block;
+            line-height: 1.4;
         }
+        /* полностью убираем эффекты наведения/фокуса */
+        .graduate:hover,
+        .graduate:focus,
+        .graduate:active {
+            background: transparent;
+            color: #1a3e6f;
+            text-decoration: none;
+            cursor: default;
+            border-bottom: 1px dotted #ccc;
+            outline: none;
+        }
+        /* если нужно чуть аккуратнее, можно убрать даже пунктир — тогда вообще нейтрально */
+        /* но для читаемости оставим, но это не ссылочный стиль */
+        
         h2 { color: #a50044; border-bottom: 2px solid #004d98; padding-bottom: 5px; }
-        h3 { color: #004d98; }
+        h3 { color: #004d98; margin-top: 25px; }
         footer { font-size: 10pt; margin-top: 40px; }
+        
+        /* дополнительная гарантия: ссылки в навигации и подвале отличаются, а .graduate — нет */
+        a {
+            text-decoration: underline;
+        }
+        /* переопределяем для выпускников, даже если где-то унаследуют */
+        .graduate-list .graduate,
+        .graduate-list span.graduate {
+            text-decoration: none !important;
+            border-bottom: 1px dotted #aaa;
+            cursor: default;
+        }
+        .graduate-list .graduate:hover {
+            text-decoration: none !important;
+            border-bottom: 1px dotted #aaa;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <a href="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" target="_blank">
-                    <img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Карта проезда к стадиону" width="200">
+        <img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Эмблема Барселоны" width="90" style="border-radius: 12px;">
     </a>
     <h1>Ла Масия — легендарная академия</h1>
 </header>
@@ -82,6 +126,7 @@
         <p>Главный принцип Ла Масии — развитие не только футбольных навыков, но и воспитание личности. Академия славится своей системой подготовки, основанной на контроле мяча, интеллектуальной игре и командном взаимодействии. Именно здесь зародился знаменитый стиль «тики-така».</p>
     </div>
 
+    <!-- Блок знаменитых выпускников: теперь каждый элемент оформлен как обычный текст с лёгким пунктиром (не ссылка, не кнопка) -->
     <h3>Знаменитые выпускники Ла Масии</h3>
     <div class="graduate-list">
         <span class="graduate">Лионель Месси</span>
