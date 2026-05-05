@@ -2,81 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ФК Барселона — Официальный сайт фанатов</title>
+    <title>ФК Барселона — Més que un club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 11pt;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;}
-        header, footer {
-            background-color: #004d98;
-            color: white;
-            padding: 20px;
-            text-align: center;}
-        nav {
-            background-color: #a50044; 
-            padding: 10px;
-            text-align: center;}
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;}
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;}
-        .logo {
-            width: 100px;
-            vertical-align: middle;}
-        .preview-box {
-            border: 1px solid #ccc;
-            padding: 10px;
-            display: inline-block;}
-        footer {
-            font-size: 10pt;
-            margin-top: 50px;}
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.5; background: linear-gradient(135deg, #f5f7fc 0%, #eef2f7 100%); color: #1a2c3e; }
+        header { background: linear-gradient(135deg, #002b5e 0%, #004d98 100%); color: white; padding: 30px 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+        header img { border-radius: 20px; transition: transform 0.3s; }
+        header img:hover { transform: scale(1.02); }
+        header h1 { margin-top: 15px; font-size: 2rem; }
+        nav { background: linear-gradient(95deg, #8b0033 0%, #a50044 100%); padding: 14px 20px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: 600; transition: all 0.2s; border-bottom: 2px solid transparent; display: inline-block; }
+        nav a:hover { border-bottom-color: #ffdd55; transform: translateY(-2px); }
+        .container { max-width: 1100px; margin: 30px auto; padding: 35px; background: rgba(255,255,255,0.96); border-radius: 36px; box-shadow: 0 25px 45px rgba(0,0,0,0.08); }
+        h2 { color: #a50044; font-size: 1.9rem; border-left: 5px solid #ffcd00; padding-left: 18px; margin-bottom: 25px; }
+        h3 { color: #004d98; font-size: 1.4rem; margin: 20px 0 15px; }
+        .info-panel { background: linear-gradient(135deg, #f8faff, #f0f4fa); padding: 24px; border-radius: 28px; margin: 25px 0; border-left: 6px solid #a50044; }
+        .preview-box { background: white; border: 1px solid #e0e8f0; padding: 20px; text-align: center; margin: 25px 0; border-radius: 32px; transition: all 0.25s; }
+        .preview-box:hover { transform: translateY(-3px); box-shadow: 0 18px 32px rgba(0,0,0,0.1); }
+        .preview-box img { border-radius: 20px; max-width: 100%; }
+        .back-link { display: inline-block; margin-top: 30px; background: #eef2f7; padding: 12px 28px; border-radius: 50px; transition: 0.2s; }
+        .back-link a { text-decoration: none; color: #004d98; font-weight: 600; }
+        .back-link:hover { background: #e2e8f0; transform: translateX(-4px); }
+        footer { background: linear-gradient(135deg, #001f3f, #002b5e); color: #cddde9; text-align: center; padding: 30px; margin-top: 40px; }
+        @media (max-width: 750px) { .container { padding: 20px; margin: 20px; } nav a { margin: 0 8px; font-size: 0.8rem; } h2 { font-size: 1.5rem; } }
     </style>
 </head>
 <body>
-<header>
-    <a href="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png">
-        <img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Логотип ФК Барселона" class="logo">
-    </a>
-    <h1>Футбольный клуб «Барселона»</h1>
-</header>
-<nav>
-
-    <a href="index.html">Главная</a>
-    <a href="history.html">История</a>
-    <a href="squad.html">Состав</a>
-    <a href="stadium.html">Стадион</a>
-    <a href="trophies.html">Трофеи</a>
-    <a href="contacts.html">Контакты</a>
-    <a href="legends.html">Легенды</a>
-    <a href="lamasia.html">Ла Масия</a>
-    <a href="schedule.html">Расписание</a>
-    <a href="shop.html">Магазин</a>
-</nav>
-<div class="container">
-    <h2>Добро пожаловать на сайт "Més que un club!"</h2>
-    <p>Футбольный клуб «Барселона», базирующийся в одноименном городе, является одним из самых титулованных клубов в мире.</p>
-    <h3>Наш стадион</h3>
-    <div class="preview-box">
-        <p>Нажмите на фото для увеличения:</p>
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_9ofH_AUzmqvNVs5O8rV3Ufjsfna4lPwhQ&s" target="_blank">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_9ofH_AUzmqvNVs5O8rV3Ufjsfna4lPwhQ&s" alt="Стадион Камп Ноу уменьшенная копия" width="200">
-        </a>
-    </div>
-    <p>Здесь вы найдете информацию о текущем составе, расписании игр и великой истории каталонского гранда.</p>
-</div>
-<footer>
-    <p>Контактная информация:<br>
-    Адрес: Aristides Maillol s/n, 08028 Barcelona, Spain<br>
-    Email: info@fcbarcelona.cat | Тел: +34 902 1899 00</p>
-    <p>&copy; 2026 ФК Барселона. Студенческая работа. Автор: Богидаев Владислав 1 курс</p>
-</footer>
+<header><a href="index.html"><img src="https://png.pngtree.com/png-clipart/20220727/ourmid/pngtree-flag-of-barcelona-footbalp-club-mockup-png-image_6075765.png" alt="Логотип" width="100"></a><h1>⚽ Futbol Club Barcelona</h1><p style="font-style: italic;">Més que un club</p></header>
+<nav><a href="index.html">Главная</a> <a href="history.html">История</a> <a href="squad.html">Состав</a> <a href="stadium.html">Стадион</a> <a href="trophies.html">Трофеи</a> <a href="contacts.html">Контакты</a> <a href="legends.html">Легенды</a> <a href="lamasia.html">Ла Масия</a> <a href="schedule.html">Расписание</a> <a href="shop.html">Магазин</a></nav>
+<div class="container"><h2>Добро пожаловать на сайт "Més que un club!"</h2><p>Футбольный клуб «Барселона», базирующийся в одноименном городе, является одним из самых титулованных клубов в мире.</p><div class="info-panel"><h3>🎯 Наша миссия</h3><p>Вдохновлять миллионы болельщиков по всему миру, показывая атакующий, красивый футбол и сохраняя каталонские традиции.</p></div><div class="preview-box"><p><strong>🏟️ Наш стадион</strong></p><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_9ofH_AUzmqvNVs5O8rV3Ufjsfna4lPwhQ&s" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_9ofH_AUzmqvNVs5O8rV3Ufjsfna4lPwhQ&s" alt="Камп Ноу" width="280"></a><p>Нажмите на фото для увеличения</p></div><p>Здесь вы найдете информацию о текущем составе, расписании игр и великой истории каталонского гранда.</p><div class="back-link"><a href="index.html">← На главную страницу</a></div></div>
+<footer><p>Адрес: Aristides Maillol s/n, 08028 Barcelona, Spain | Email: info@fcbarcelona.cat | Тел: +34 902 1899 00</p><p>© 2026 ФК Барселона. Студенческая работа. Автор: Богидаев Владислав 1 курс</p></footer>
 </body>
 </html>
